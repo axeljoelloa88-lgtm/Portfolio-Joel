@@ -46,12 +46,11 @@ body {
 /* ----- BOX PRINCIPALE ----- */
 .content-box {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     background: white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    margin-bottom: 2rem;
 }
 
 /* ----- TITRE ----- */
@@ -71,52 +70,36 @@ body {
     border-radius: 2px;
 }
 
-/* ----- COMPÉTENCES ----- */
-.competence-container {
-    margin-bottom: 2rem;
+/* ----- GROUPES DE COMPÉTENCES ----- */
+.skill-group {
+    margin-top: 2.2rem;
 }
 
-.competence-name {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+.skill-group h2 {
     color: #2c3e50;
+    font-size: 1.3rem;
+    margin: 0 0 0.9rem 0;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
 }
 
-/* Barre */
-.progress-bar {
-    height: 12px;
-    background: #ecf0f1;
-    border-radius: 6px;
-    overflow: hidden;
+.tag-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 0;
+    margin: 0;
 }
 
-.progress {
-    height: 100%;
-    border-radius: 6px;
-    transition: width 1s ease-in-out;
-}
-
-/* ----- Couleurs + Pourcentages ----- */
-.p-html {
-    width: 40%;
-    background: linear-gradient(90deg, #3498db, #2980b9);
-}
-
-.p-cisco {
-    width: 45%;
-    background: linear-gradient(90deg, #e74c3c, #c0392b);
-}
-
-.p-cloud {
-    width: 10%;
-    background: linear-gradient(90deg, #9b59b6, #8e44ad);
-}
-
-.p-linux {
-    width: 14%;
-    background: linear-gradient(90deg, #27ae60, #2ecc71);
+.tag-list li {
+    background: #eef4fa;
+    color: #2c3e50;
+    border: 1px solid #d6e4f0;
+    padding: 0.45rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
 }
 
 /* ----- RESPONSIVE ----- */
